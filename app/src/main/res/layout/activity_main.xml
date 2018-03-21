@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fac.jalil.hikerswatch.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="12dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/ina"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp"
+        android:text="TextView"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="24dp"/>
+
+    <TextView
+        android:id="@+id/lat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_below="@+id/textView"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="55dp"
+        android:text="Latitude:"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="18sp"/>
+    <TextView
+        android:id="@+id/lang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_below="@+id/lat"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="15dp"
+        android:text="Longitude:"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/acctv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_below="@+id/lang"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="15dp"
+        android:text="Accuracy:"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="18sp"/>
+    <TextView
+        android:id="@+id/alttv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_below="@+id/acctv"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="15dp"
+        android:text="Altitude:"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="18sp"/>
+    <TextView
+        android:id="@+id/addtv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_below="@+id/alttv"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="15dp"
+        android:text="Address: fake city\n fake streat"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="18sp"/>
+</RelativeLayout>
